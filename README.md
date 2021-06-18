@@ -15,6 +15,42 @@ Project (Soongsil University Graduate Study) and TIL(Today I Learned) on single 
 #### Introduction of scRNA sequencing analysis
 ______________
 
+### Introduction 
+
+<p> <t> COVID-19 is a global pandemic known to be originated from mainland China. 
+    SARS-CoV2 virus is known to infect respiratory tract, first. Infected individuals have exhibited a large range of symptoms. Those symptoms are known to point to differential immune response (Paces <em>et al.</em> 2020). 
+    However, a high-resolution respiratory immune landscape is largely unknown. Since brochoalveolar alvage fluid (BAL) mirrors local immune landscape, they have attempted to do single-cell sequencing on it to three subject populations: healthy control, moderately illed, and severely- illed. With the carefully laid-out definitions of severeity, they have sequenced BAL of a total of 13 patients including 3 healthy control subjects. 
+
+### Method 
+#### QC & Integration
+________________
+- QC was done accordingly to the paper 
+    - Minimum RNA Features = 200
+    - Maximum RNA Features = 6000
+    - Required counts of RNA = 1000
+    - Maximum mito. cut-off = 10
+- Integration was also done accordingly to the paper (first 50 dimensions)
+<p>
+    
+```R
+# Of which have been QC(filtered), 
+all <- c(healthy.df.filtered, moderate.df.filtered, severe.df.filtered)
+nCoV <- FindIntegrationAnchors(object.list = all, dims = 1:50)
+nCoV.integrated <- IntegrateData(anchorset = nCoV, dims = 1:50,features.to.integrate = rownames(nCoV))
+```
+
+#### Clustering 
+________________
+- Clustering was done accordingly to the paper 
+    - Normalization using 'LogNormalize' method 
+    - 'vst' method to identify top 2000 variable genes 
+    - Scaling was done with variables 'nCount_RNA' and 'percent'mito'.
+
+
+### Results: 
+_______
+<br>
+
 ##### Observation of Pre-QC
 ______________
 <p> After downloading the files (h5 format), I have looked at the raw distribution of (1) number of RNA features (2) number of RNA (reads) counts (3) percentage of mitochondria across samples. </p>
@@ -25,8 +61,4 @@ The rest of samples (N = 6) are severely illed patients. Note the general skewed
 
 ![Figure 1.1: Pre-QC of representative normal subject (C51)](images/pre_qc/C51_qc.png)
 ![Figure 1.2: Pre-QC of representative moderately illed subject (C142)](images/pre_qc/C142_qc.png)
-![Figure 1.3: Pre-QC of representative severely illed subject (C145)](images/pre_qc/C142_qc.png)
-
-
-
- 
+![Figure 1.3: Pre-QC of representative severely illed subject (C145)](images/pre_qc/C145_qc.png) 
