@@ -76,6 +76,6 @@ The rest of samples (N = 6) are severely illed patients. Note the general skewed
     Distinct bi-modal distribution of RNA feature numbers has disappeared from the normal subjects data. Except for one subject (i.e. C100), fairly uniform distributions for both RNA feature numbers and frequencies were observed. On the other hands, bi-modal distribution was seen on moderately illed patients for both RNA feature numbers and frequencies (except for one subject). Increased diversities had been observed in severely illed patients. </p>
     <br> 
 
-![Figure 2: Post-QC of all subjects](images/post_qc/umi-gene.png)
+![Figure 2: Post-QC of all subjects](images/post_qc/qc.png)
 
 
