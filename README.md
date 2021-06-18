@@ -8,9 +8,12 @@ Project (Soongsil University Graduate Study) and TIL(Today I Learned) on single 
 - Paper/ Data Reference: <br>
 [Single-cell landscampe of bronchoalveolar immune cells in patients with COVID-19](https://www.nature.com/articles/s41591-020-0901-9)
 - Data that is ready to be analyzed is in data/ in h5 format
+	- TCR-seq is out of scope in this analysis report.
+	- A normal subject (GSM3660650) has not been included in the analysis. 
 - Metadata containing patient (stratification into healthy/moderate/severe) and barcode are in the data/ folder. 
 - Folder: image directory is broken down into the followings: 
 	- pre_qc : Pre-QCed samples 
+	- post_qc: Post-QCed samples 
 
 #### Introduction of scRNA sequencing analysis
 ______________
