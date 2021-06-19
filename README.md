@@ -102,4 +102,36 @@ Figure 3 and Figure 4 have shown the distinct patterns do patients have. To delv
 **Figure 6: UMAP projection with a total of 29 clusters**
 ![Figure 6: UMAP projection with a total of 29 clusters](images/analysis/umap_markers.png)
 
+### Finding differential markers on the Clusters 0, 2, 12
+
+
+#### Cluster 0 (COVID19- dominant)
+<p> 
+    Figure 7 shows dot-plot expression for the most variable genes (Figure 8) across subjects from Severe (0_S) to Healthy Control (0_HC) in cluster 0. To be an instance, WFDC2 gene has been increasingly expressed upon the severeity of disease. 0_NA label most likely correspond to the Moderate (0_M) patients (not shown). There is a list of curated gene by the original authors (i.e. {MARCO, CD48, FCGR3A, TREM2, FCN1, SPP1, FAB4, and CD8A}). Figure 9 shows dot-plot expression for the curated gene lists across subjects. In Cluster 0, FABP4 gene is notable because of the trend of decreasing expression against severeity of disease. 
+</p>
+
+#### Cluster 2 (Healthy Control- dominant)
+<p> 
+    Figure 10 shows dot-plot expression for the most variable genes (Figure 8) across subjects from Severe (0_S) to Healthy Control (0_HC) in cluster 2. A trend of increasing WFDC2 expression against severety of disease has been also observed. Also, dot-plot expression for the curated gene lists has been done (Figure 11). Similar pattern has been observed where FABP4 decreases over the severeity of the disease. </p>
+
+
+#### Cluster 12 (Admixed) 
+<p> 
+    Figure 12 shows dot-plot expression for the most variable genes (Figure 8) across subjects from Severe (0_S) to Healthy Control (0_HC) in cluster 12. Those genes are generally expressed exclusively for the COVID-19 patients (0_S, 0_M).  </p> 
+
+
+**Figure 7: Dot-plot expression in cluster 0**
+![Figure 7](images/analysis/cluster0_dotplot.png)
+
+
+**Figure 8: Most-variable genes**
+![Figure 8](images/analysis/cluster0_integrated.png)
+
+
+**Figure 9: Dot-plot expression in cluster 0 for curated genes**
+![Figure 9](images/analysis/cluster0_integrated_curated_dotplot.png)
+
+
+**Figure 10: Dot-plot expression in cluster 2**
+![Figure 10](images/analysis/cluster2_dotplot.png)
 
