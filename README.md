@@ -9,7 +9,8 @@ Project (Soongsil University Graduate Study) and TIL(Today I Learned) on single 
 [Single-cell landscampe of bronchoalveolar immune cells in patients with COVID-19](https://www.nature.com/articles/s41591-020-0901-9)
 - Data that is ready to be analyzed is in data/ in h5 format
 	- TCR-seq is out of scope in this analysis report.
-	- A normal subject (GSM3660650) has not been included in the analysis. 
+	- A normal subject (GSM3660650) has not been included in the analysis.
+	 Meta data containing patient and barcode information is in .txt file, named all.cell.annotation.meta.txt or meta.txt 
 - Metadata containing patient (stratification into healthy/moderate/severe) and barcode are in the data/ folder. 
 - Folder: image directory is broken down into the followings: 
 	- pre_qc : Pre-QCed samples 
@@ -62,11 +63,11 @@ Normal people (corresponding to the C51, C52, and C100) all have distinct bimoda
 For three moderately infected patients (C141, C142, C144), I have noted that highly diverse distributions of RNA features; from bimodal to long-tailed distribution really close to 0. 
 The rest of samples (N = 6) are severely illed patients. Note the general skewed distribution close to 0. Also, RNAs (in terms of both frequencies and kinds) are very diverse, observing from a lot of points concentrated at the bottom for severely illed patients.  </p>
 
-
-
-
+**Figure 1.1: Pre-QC of representative normal subject (C51)**
 ![Figure 1.1: Pre-QC of representative normal subject (C51)](images/pre_qc/C51_qc.png)
+**Figure 1.2: Pre-QC of representative moderatly illed subject (C142)**
 ![Figure 1.2: Pre-QC of representative moderately illed subject (C142)](images/pre_qc/C142_qc.png)
+**Figure 1.3: Pre-QC of representative severely illed subject (C145)**
 ![Figure 1.3: Pre-QC of representative severely illed subject (C145)](images/pre_qc/C145_qc.png) 
 
 
@@ -76,6 +77,29 @@ The rest of samples (N = 6) are severely illed patients. Note the general skewed
     Distinct bi-modal distribution of RNA feature numbers has disappeared from the normal subjects data. Except for one subject (i.e. C100), fairly uniform distributions for both RNA feature numbers and frequencies were observed. On the other hands, bi-modal distribution was seen on moderately illed patients for both RNA feature numbers and frequencies (except for one subject). Increased diversities had been observed in severely illed patients. </p>
     <br> 
 
+**Figure 2: Post-QC of all subjects**
 ![Figure 2: Post-QC of all subjects](images/post_qc/qc.png)
+
+### Identifying distinct distribution patterns upon patient group (i.e. severeity) and COVID-19 presence 
+<br> 
+<p>
+    Using the metadata to differentiate and identify clusters has failed due to several reasons: (1) barcode number mismatch (2) technical difficulties. Jumping into conclusion, resolving subject information into Seurat object has been successful. 
+</br> </p>
+<p>
+    Hence, I have assessed the UMAP projection of all cells to look at the distinct clusters of which specfic subgroups (i.e. COVID-19 and non-COVID19). 
+Figure 3 and Figure 4 have shown the distinct patterns do patients have. To delve more to see what clusters are specific to the subgroup, a proportion of clusters upon disease presence (Figure 5) has identified which clusters deserve more attention. Clusters have been selected upon (1) relative contribution of clusters that form different disease groups, and (2) modest convolutedness of clusters. To be specific, I have refrained to select clusters admixed with the different samples (Figure 6).  </p>
+    Finally, I have decided to look into cluster 0, cluster 2, and cluster 12. Cluster 0 seems very specific to COVID-19 patients; Cluster 2 to healthy control; cluster 12 indicates to mostly healthy controls, but moderately admixed with COVID-19 infected subjects. 
+
+**Figure 3: UMAP projection upon groups composed of Healthy Control(HC), Moderate (M), and Severe (S)**
+![Figure 3: UMAP projection upon groups composed of Healthy Control(HC), Moderate (M), and Severe (S)](images/analysis/nCoV-umap-group-group.png)
+
+**Figure 4: UMAP projection across samples starting with group names.**
+![Figure 4: UMAP projection across samples starting with group names](images/analysis/nCoV-umap-group-sample.png)
+
+**Figure 5: Proportion of clusters upon disease presence.**
+![Figure 4: UMAP projection across samples starting with group names](images/analysis/proportion_disease.png)
+
+**Figure 6: UMAP projection with a total of 29 clusters**
+![Figure 6: UMAP projection with a total of 29 clusters](images/analysis/umap_markers.png)
 
 
