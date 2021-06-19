@@ -117,7 +117,7 @@ Figure 3 and Figure 4 have shown the distinct patterns do patients have. To delv
 
 #### Cluster 12 (Admixed) 
 <p> 
-    Figure 12 shows dot-plot expression for the most variable genes (Figure 8) across subjects from Severe (0_S) to Healthy Control (0_HC) in cluster 12. Those genes are generally expressed exclusively for the COVID-19 patients (0_S, 0_M).  </p> 
+    Figure 12 shows dot-plot expression for the most variable genes (Figure 8) across subjects from Severe (0_S) to Healthy Control (0_HC) in cluster 12. Those genes are generally expressed exclusively for the COVID-19 patients (0_S, 0_M). No pattern has been observed in the curated gene lists (not shown).  </p> 
 
 
 **Figure 7: Dot-plot expression in cluster 0**
@@ -135,3 +135,8 @@ Figure 3 and Figure 4 have shown the distinct patterns do patients have. To delv
 **Figure 10: Dot-plot expression in cluster 2**
 ![Figure 10](images/analysis/cluster2_dotplot.png)
 
+**Figure 11: Dot-plot expression in cluster 2 for curated genes**
+![Figure 11](images/analysis/cluster2_integrated_curated_dotplot.png)
+
+**Figure 12: Dot-plot expression in cluster 12**
+![Figure 12](images/analysis/cluster12_dotplot.png)
