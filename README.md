@@ -140,3 +140,34 @@ Figure 3 and Figure 4 have shown the distinct patterns do patients have. To delv
 
 **Figure 12: Dot-plot expression in cluster 12**
 ![Figure 12](images/analysis/cluster12_dotplot.png)
+
+
+### Discussion: 
+_______
+<br>
+
+<p>
+    Results show the differential expression of WFDC2 gene in the COVID-19 patients. WFDC2 encodes the protein HE4 (Human Epididymis Protein 4). HE4 is known to be a secretory protein that serves as biomarker for various diseases from epithelial ovarian cancers to chronic kidney disease (Li <em>et al.</em> 2020). Normally, HE4 expression is highest in normal human trachea and salivary gland and modest in the lung. Upon an insult, HE4 immunoreactivity is found with corresponding heightened gene expression. (Galgano <em>et al.</em> 2006). Parallel to such results, Wei and the team have observed the correlation between the HE4 protein level and COVID-19 severeity (Wei <em>et al.</em> 2020; Schirinzi <em> et al. </em> 2020).
+
+### Conclusion: 
+_______
+<br>
+<p> 
+    A high-definition landscape of respiratory system of the COVID19 has been laid out. This analysis has confirmed the biomarker (HE4) for COVID19. 
+</p>
+
+### Reference besides this paper: 
+_______
+<br>
+1. Galgano, M. T., Hampton, G. M., & Frierson, H. F. (2006). Comprehensive analysis of HE4 expression in normal and malignant human tissues. Modern Pathology, 19(6), 847–853. https://doi.org/10.1038/modpathol.3800612
+
+
+2. Li, L., Yao, Y., Liang, J., Zhan, X., Wang, F., Yue, C., Wu, B.-Q., Hu, S., Liu, M., Wan, J., & Luo, J. (2020). Serum human epididymis protein 4 concentrations are associated with severity of patients with pulmonary tuberculosis. Clinica Chimica Acta, 502, 255–260. https://doi.org/10.1016/j.cca.2019.11.009
+
+
+3. Paces, J., Strizova, Z., Smrz, D., & Cerny, J. (2020). COVID-19 and the Immune System. Physiological Research, 379–388. https://doi.org/10.33549/physiolres.934492
+
+
+4. Schirinzi, A., Cazzolla, A. P., Lovero, R., Lo Muzio, L., Testa, N. F., Ciavarella, D., Palmieri, G., Pozzessere, P., Procacci, V., Di Serio, F., & Santacroce, L. (2020). New Insights in Laboratory Testing for COVID-19 Patients: Looking for the Role and Predictive Value of Human epididymis secretory protein 4 (HE4) and the Innate Immunity of the Oral Cavity and Respiratory Tract. Microorganisms, 8(11), 1718. https://doi.org/10.3390/microorganisms8111718
+
+
